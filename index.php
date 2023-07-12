@@ -2,17 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-
     <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Product Name</h1>
-    <p>Product Description</p>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#">Features</a>
+            <a class="nav-item" href="#">Pricing</a>
+            <a class="nav-item" href="#">Contact</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="title">Product Name</h1>
+        <p class="description">Product Description</p>
+        <div class="product">
+            <img src="product.png" alt="Product Image">
+        </div>
+        <button class="cta-btn">Buy Now</button>
+    </main>
     <form action="checkout.php" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br>
